@@ -1,7 +1,7 @@
 const express = require('express');
 const { spawn } = require('child_process');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3001;
 
 app.get('/get-response', (req, res) => {
     const userInput = req.query.input;
