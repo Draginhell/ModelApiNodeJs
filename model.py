@@ -6,6 +6,11 @@ import pickle
 import nltk
 from nltk.stem import WordNetLemmatizer
 import numpy as np
+import nltk
+
+nltk.download('wordnet')
+
+
 # Load necessary resources
 lemmatizer = WordNetLemmatizer()
 model = tf.keras.models.load_model('chatbot_model.h5')
